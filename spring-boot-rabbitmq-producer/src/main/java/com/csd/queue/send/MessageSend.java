@@ -13,4 +13,12 @@ public class MessageSend {
     public void sendMessage(){
         amqpTemplate.convertAndSend("direct_queue","hello rabbitmq(direct)");
     }
+
+    public void sendTopicMessage(String bindKey){
+        amqpTemplate.convertAndSend("amq.topic",bindKey,"hello RabbitMQ(topicExchange),bindKey:"+bindKey);
+    }
+
+    public void sendFanoutMessage(){
+        amqpTemplate.convertAndSend("fanoutExchange","","hello RabbitMQ(fanoutExchange)");
+    }
 }

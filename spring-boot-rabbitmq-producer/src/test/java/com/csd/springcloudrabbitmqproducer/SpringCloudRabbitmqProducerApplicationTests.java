@@ -21,4 +21,15 @@ public class SpringCloudRabbitmqProducerApplicationTests {
 		}
 	}
 
+	@Test
+	public void testSendTopicMessage(){
+		messageSend.sendTopicMessage("topic.message");
+
+		messageSend.sendTopicMessage("topic.messagessss");
+	}
+
+	@Test
+	public void testSendFanoutMessage(){
+		messageSend.sendFanoutMessage();
+	}
 }

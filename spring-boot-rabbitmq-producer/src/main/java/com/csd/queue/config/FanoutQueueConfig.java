@@ -27,7 +27,7 @@ public class FanoutQueueConfig {
 
     @Bean
     public FanoutExchange fanoutExchange(){
-        return new FanoutExchange("fanoutExchange");
+        return new FanoutExchange("amq.fanout");
     }
 
     @Bean

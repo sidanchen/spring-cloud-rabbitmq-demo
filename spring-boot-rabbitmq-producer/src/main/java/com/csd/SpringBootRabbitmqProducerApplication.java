@@ -2,7 +2,7 @@ package com.csd;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-//11112222
+//111122224444
 @SpringBootApplication
 public class SpringBootRabbitmqProducerApplication {
 

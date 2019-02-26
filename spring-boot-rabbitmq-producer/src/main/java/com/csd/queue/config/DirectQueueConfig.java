@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+//2222
 public class DirectQueueConfig {
 
     @Bean(name="direct_queue")

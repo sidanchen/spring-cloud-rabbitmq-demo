@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 /**
- * 添加注释
+ * 添加注释111
  */
 @Configuration
 public class FanoutQueueConfig {

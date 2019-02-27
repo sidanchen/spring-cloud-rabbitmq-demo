@@ -32,6 +32,7 @@ public class FanoutQueueConfig {
         return new FanoutExchange("amq.fanout");
     }
 
+    
     @Bean
     public Binding bindingFanoutQueue1(@Qualifier("fanout_queue1") Queue queue,FanoutExchange fanoutExchange){
         return BindingBuilder.bind(queue).to(fanoutExchange);
